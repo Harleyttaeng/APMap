@@ -15,41 +15,151 @@ export class Items {
 
   constructor() {
     let items = [
-      {
-        "name": "Burt Bear",
-        "profilePic": "assets/img/speakers/bear.jpg",
-        "about": "Burt is a Bear."
-      },
-      {
-        "name": "Charlie Cheetah",
-        "profilePic": "assets/img/speakers/cheetah.jpg",
-        "about": "Charlie is a Cheetah."
-      },
-      {
-        "name": "Donald Duck",
-        "profilePic": "assets/img/speakers/duck.jpg",
-        "about": "Donald is a Duck."
-      },
-      {
-        "name": "Eva Eagle",
-        "profilePic": "assets/img/speakers/eagle.jpg",
-        "about": "Eva is an Eagle."
-      },
-      {
-        "name": "Ellie Elephant",
-        "profilePic": "assets/img/speakers/elephant.jpg",
-        "about": "Ellie is an Elephant."
-      },
-      {
-        "name": "Molly Mouse",
-        "profilePic": "assets/img/speakers/mouse.jpg",
-        "about": "Molly is a Mouse."
-      },
-      {
-        "name": "Paul Puppy",
-        "profilePic": "assets/img/speakers/puppy.jpg",
-        "about": "Paul is a Puppy."
-      }
+          {
+            "roomNumber": "10.08",
+            "roomName": "Mediterranean",
+            "seats": "13",
+            "projector": true,
+            "tv": true,
+            "whiteboard": true
+          },
+          {
+            "roomNumber": "10.11",
+            "roomName": "Coral",
+            "seats": "24",
+            "projector": true,
+            "tv": true,
+            "whiteboard": true
+          },
+          {
+            "roomNumber": "10.12",
+            "roomName": "Solomon",
+            "seats": "30",
+            "projector": true,
+            "tv": true,
+            "whiteboard": true
+          },
+          {
+            "roomNumber": "10.13",
+            "roomName": "Tasman",
+            "seats": "130",
+            "projector": true,
+            "tv": true,
+            "whiteboard": true
+          },
+          {
+            "roomNumber": "10.14",
+            "roomName": "Caribbean",
+            "seats": "12",
+            "projector": true,
+            "tv": true,
+            "whiteboard": true
+          },
+          {
+            "roomNumber": "10.15",
+            "roomName": "Aegean",
+            "seats": "12",
+            "projector": true,
+            "tv": true,
+            "whiteboard": true
+          },
+          {
+            "roomNumber": "10.16",
+            "roomName": "Sargasso",
+            "seats": "12",
+            "projector": true,
+            "tv": true,
+            "whiteboard": true
+          },
+          {
+            "roomNumber": "10.17",
+            "roomName": "Caspian",
+            "seats": "12",
+            "projector": true,
+            "tv": true,
+            "whiteboard": true
+          },
+          {
+            "roomNumber": "10.19",
+            "roomName": "Silicon Valley",
+            "seats": "22",
+            "projector": true,
+            "tv": true,
+            "whiteboard": true
+          },
+          {
+            "roomNumber": "10.20",
+            "roomName": "Bass Strait",
+            "seats": "8",
+            "projector": true,
+            "tv": true,
+            "whiteboard": true
+          },
+          {
+            "roomNumber": "10.21",
+            "roomName": "Java",
+            "seats": "8",
+            "projector": true,
+            "tv": true,
+            "whiteboard": true
+          },
+          {
+            "roomNumber": "10.27",
+            "roomName": "Oxford",
+            "seats": "28",
+            "projector": true,
+            "tv": true,
+            "whiteboard": true
+          },
+          {
+            "roomNumber": "10.28",
+            "roomName": "Yale",
+            "seats": "24",
+            "projector": true,
+            "tv": true,
+            "whiteboard": true
+          },
+          {
+            "roomNumber": "10.29",
+            "roomName": "Sorbonne",
+            "seats": "24",
+            "projector": true,
+            "tv": true,
+            "whiteboard": true
+          },
+          {
+            "roomNumber": "10.30",
+            "roomName": "Princeton",
+            "seats": "8",
+            "projector": true,
+            "tv": true,
+            "whiteboard": true
+          },
+          {
+            "roomNumber": "10.31",
+            "roomName": "Salamanca",
+            "seats": "8",
+            "projector": true,
+            "tv": true,
+            "whiteboard": true
+          },
+          {
+            "roomNumber": "10.32",
+            "roomName": "Cambridge",
+            "seats": "28",
+            "projector": true,
+            "tv": true,
+            "whiteboard": true
+          },
+          {
+            "roomNumber": "10.33",
+            "roomName": "Monash",
+            "seats": "30",
+            "projector": true,
+            "tv": true,
+            "whiteboard": true
+          }
+        
     ];
 
     for (let item of items) {

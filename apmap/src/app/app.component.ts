@@ -32,8 +32,6 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   pages: any[] = [
-    { title: 'Welcome', component: 'WelcomePage' },
-    { title: 'Tabs', component: 'TabsPage' }
   ]
 
   constructor(private translate: TranslateService, platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {

@@ -51,7 +51,7 @@ export class TutorialPage {
   }
 
   startApp() {
-    this.navCtrl.setRoot('TabsPage', {}, {
+    this.navCtrl.setRoot('ListMasterPage', {}, {
       animate: true,
       direction: 'forward'
     });

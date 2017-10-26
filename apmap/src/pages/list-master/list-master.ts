@@ -9,7 +9,7 @@ import { Items } from '../../providers/providers';
   selector: 'page-list-master',
   templateUrl: 'list-master.html'
 })
-export class ListMasterPage {
+export class ListMasterPage implements OnInit {
   currentItems: Item[];
 
   constructor(public navCtrl: NavController, public items: Items, public modalCtrl: ModalController) {

@@ -7,9 +7,13 @@ export class Items {
   items: Item[] = [];
 
   defaultItem: any = {
-    "name": "Burt Bear",
-    "profilePic": "assets/img/speakers/bear.jpg",
-    "about": "Burt is a Bear.",
+    "roomNumber": "10.08",
+    "roomName": "Mediterranean",
+    "seats": "13",
+    "projector": true,
+    "tv": true,
+    "whiteboard": true,
+    "isClicked": false
   };
 
 

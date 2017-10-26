@@ -8,7 +8,9 @@
   <ion-list>
     <ion-item-sliding *ngFor="let item of currentItems">
       <button ion-item (click)="openItem(item)">
-        <h2>{{item.roomNumber + ' ' + item.roomName}}</h2>
+        <ion-avatar item-start>
+        </ion-avatar>
+        <h2>{{item.roomNumber + " " + item.roomName}}</h2>
         <ion-note item-end *ngIf="item.note">{{item.note}}</ion-note>
       </button>
     </ion-item-sliding>

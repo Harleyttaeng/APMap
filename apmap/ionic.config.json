@@ -2,5 +2,7 @@
   "name": "apmap",
   "app_id": "c9f529fe",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }

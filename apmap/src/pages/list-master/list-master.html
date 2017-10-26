@@ -57,7 +57,7 @@
   <!--</ion-list>-->
 
   <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
-  <span *ngFor="let item of currentItems">
+  <span *ngFor="let item of aux_currentItems">
       <span ion-item (click)="highlightBlock(item, currentItems)">
         <details>
          <summary class="mouse_pointer"> {{item.roomNumber + " " + item.roomName}}</summary>

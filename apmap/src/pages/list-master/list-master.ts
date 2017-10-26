@@ -44,11 +44,11 @@ export class ListMasterPage {
   getItems(ev: any) {
     let val = ev.target.value;
     if (val && val.trim() != '') {
-      this.currentItems = this.currentItems.filter((item) => {
-        return (item.roomNumber.indexOf(val) > -1);
+      this.aux_currentItems = this.currentItems.filter((item) => {
+        return ((item.roomNumber + " " + item.roomName).indexOf(val) > -1);
         })
     } else {
-      this.currentItems = this.aux_currentItems;
+      this.aux_currentItems = this.currentItems;
     }
   }
 

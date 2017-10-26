@@ -52,12 +52,30 @@ export class ListMasterPage {
     });
   }
 
-  showAlert(item: Item) {
-    let alert = this.alertCtrl.create({
-      title: 'New Friend!',
-      subTitle: 'Your friend, Obi wan Kenobi, just accepted your friend request!' ,
-      buttons: ['OK']
-    });
-    alert.present();
-  }
+  // showAlert(item: Item) {
+  //   let alert = this.alertCtrl.create({
+  //     title: 'New Friend!',
+  //     subTitle: 'Your friend, Obi wan Kenobi, just accepted your friend request!' ,
+  //     buttons: ['OK']
+  //   });
+  //   alert.present();
+  // }
+  highlightBlock(item, currentItems) {
+    for (var i = 0; i < this.currentItems.length; i++) {
+      if(currentItems[i].isClicked) {
+        document.getElementById(currentItems[i].roomNumber).style.fill = "";
+        item.isClicked = false;
+      }
+    };
+      document.getElementById(item.roomNumber).style.fill= "red";
+      item.isClicked = true;
+    }
+
+    // if (temp === item.roomNumber) {
+    //   document.getElementById(temp).style.fill= "none";
+    //   document.getElementById(item.roomNumber).style.fill = "red";
+    // }
+    // else {
+    //   document.getElementById(item.roomNumber).style.fill= "red";
+    //   temp = item.roomNumber;
 }

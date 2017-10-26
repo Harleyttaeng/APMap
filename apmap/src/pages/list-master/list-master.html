@@ -45,14 +45,38 @@
       <rect id="10.08"x="333.5" y="87.75" opacity="0.5" width="79" height="65.75" />
     </svg>
   </div>
-  <ion-list>
-    <ion-item-sliding *ngFor="let item of currentItems">
-      <button ion-item (click)="showAlert(item)">
-        <ion-avatar item-start>
-        </ion-avatar>
-        <h2>{{item.roomNumber + " " + item.roomName}}</h2>
-        <ion-note item-end *ngIf="item.note">{{item.note}}</ion-note>
-      </button>
-    </ion-item-sliding>
-  </ion-list>
+  <!--<ion-list>-->
+    <!--<ion-item-sliding *ngFor="let item of currentItems">-->
+      <!--<button ion-item (click)="highlightBlock(item, currentItems)">-->
+        <!--<ion-avatar item-start>-->
+        <!--</ion-avatar>-->
+        <!--<h2>{{item.roomNumber + " " + item.roomName}}</h2>-->
+        <!--<ion-note item-end *ngIf="item.note">{{item.note}}</ion-note>-->
+      <!--</button>-->
+    <!--</ion-item-sliding>-->
+  <!--</ion-list>-->
+
+
+  <span *ngFor="let item of currentItems">
+      <span ion-item (click)="highlightBlock(item, currentItems)">
+        <details>
+         <summary class="mouse_pointer"> {{item.roomNumber + " " + item.roomName}}</summary>
+
+           <div class="listItem">Number of seats: {{item.seats}}</div>
+           <div class="listItemB" *ngIf="item.projector; else other_content">Projector: yes</div>
+           <ng-template #other_content><div class="listItemB">Projector: no</div>
+           </ng-template>
+
+           <div class="listItemB" *ngIf="item.tv; else other_content">TV: yes</div>
+           <ng-template #other_content><div class="listItemB">TV: no</div>
+           </ng-template>
+
+           <div class="listItemB" *ngIf="item.whiteboard; else other_content">Whiteboard: yes</div>
+           <ng-template #other_content><div class="listItemB">Whiteboard: no</div>
+           </ng-template>
+
+
+        </details>
+      </span>
+    </span>
 </ion-content>

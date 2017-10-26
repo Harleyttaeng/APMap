@@ -21,7 +21,8 @@ export class Items {
         "seats": "13",
         "projector": true,
         "tv": true,
-        "whiteboard": true
+        "whiteboard": true,
+        "isClicked": false
       },
       {
         "roomNumber": "10.11",
@@ -29,7 +30,8 @@ export class Items {
         "seats": "24",
         "projector": true,
         "tv": true,
-        "whiteboard": true
+        "whiteboard": true,
+        "isClicked": false
       },
       {
         "roomNumber": "10.12",
@@ -37,7 +39,8 @@ export class Items {
         "seats": "30",
         "projector": true,
         "tv": true,
-        "whiteboard": true
+        "whiteboard": true,
+        "isClicked": false
       },
       {
         "roomNumber": "10.13",
@@ -45,7 +48,8 @@ export class Items {
         "seats": "130",
         "projector": true,
         "tv": true,
-        "whiteboard": true
+        "whiteboard": true,
+        "isClicked": false
       },
       {
         "roomNumber": "10.14",
@@ -53,7 +57,8 @@ export class Items {
         "seats": "12",
         "projector": true,
         "tv": true,
-        "whiteboard": true
+        "whiteboard": true,
+        "isClicked": false
       },
       {
         "roomNumber": "10.15",
@@ -61,7 +66,8 @@ export class Items {
         "seats": "12",
         "projector": true,
         "tv": true,
-        "whiteboard": true
+        "whiteboard": true,
+        "isClicked": false
       },
       {
         "roomNumber": "10.16",
@@ -69,7 +75,8 @@ export class Items {
         "seats": "12",
         "projector": true,
         "tv": true,
-        "whiteboard": true
+        "whiteboard": true,
+        "isClicked": false
       },
       {
         "roomNumber": "10.17",
@@ -77,7 +84,8 @@ export class Items {
         "seats": "12",
         "projector": true,
         "tv": true,
-        "whiteboard": true
+        "whiteboard": true,
+        "isClicked": false
       },
       {
         "roomNumber": "10.19",
@@ -85,7 +93,8 @@ export class Items {
         "seats": "22",
         "projector": true,
         "tv": true,
-        "whiteboard": true
+        "whiteboard": true,
+        "isClicked": false
       },
       {
         "roomNumber": "10.20",
@@ -93,7 +102,8 @@ export class Items {
         "seats": "8",
         "projector": true,
         "tv": true,
-        "whiteboard": true
+        "whiteboard": true,
+        "isClicked": false
       },
       {
         "roomNumber": "10.21",
@@ -101,7 +111,8 @@ export class Items {
         "seats": "8",
         "projector": true,
         "tv": true,
-        "whiteboard": true
+        "whiteboard": true,
+        "isClicked": false
       },
       {
         "roomNumber": "10.27",
@@ -109,7 +120,8 @@ export class Items {
         "seats": "28",
         "projector": true,
         "tv": true,
-        "whiteboard": true
+        "whiteboard": true,
+        "isClicked": false
       },
       {
         "roomNumber": "10.28",
@@ -117,7 +129,8 @@ export class Items {
         "seats": "24",
         "projector": true,
         "tv": true,
-        "whiteboard": true
+        "whiteboard": true,
+        "isClicked": false
       },
       {
         "roomNumber": "10.29",
@@ -125,7 +138,8 @@ export class Items {
         "seats": "24",
         "projector": true,
         "tv": true,
-        "whiteboard": true
+        "whiteboard": true,
+        "isClicked": false
       },
       {
         "roomNumber": "10.30",
@@ -133,7 +147,8 @@ export class Items {
         "seats": "8",
         "projector": true,
         "tv": true,
-        "whiteboard": true
+        "whiteboard": true,
+        "isClicked": false
       },
       {
         "roomNumber": "10.31",
@@ -141,7 +156,8 @@ export class Items {
         "seats": "8",
         "projector": true,
         "tv": true,
-        "whiteboard": true
+        "whiteboard": true,
+        "isClicked": false
       },
       {
         "roomNumber": "10.32",
@@ -149,7 +165,8 @@ export class Items {
         "seats": "28",
         "projector": true,
         "tv": true,
-        "whiteboard": true
+        "whiteboard": true,
+        "isClicked": false
       },
       {
         "roomNumber": "10.33",
@@ -157,7 +174,8 @@ export class Items {
         "seats": "30",
         "projector": true,
         "tv": true,
-        "whiteboard": true
+        "whiteboard": true,
+        "isClicked": false
       }
     ];
 

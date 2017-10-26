@@ -11,9 +11,11 @@ import { Items } from '../../providers/providers';
 })
 export class ListMasterPage {
   currentItems: Item[];
+  aux_currentItems: Item[];
 
   constructor(public navCtrl: NavController, public items: Items, public modalCtrl: ModalController, public alertCtrl: AlertController) {
     this.currentItems = this.items.query();
+    this.aux_currentItems = this.currentItems;
   }
 
   /**
@@ -37,29 +39,19 @@ export class ListMasterPage {
   }
 
   /**
-   * Delete an item from the list of items.
+   * Search for an item from the list of items.
    */
-  deleteItem(item) {
-    this.items.delete(item);
+  getItems(ev: any) {
+    let val = ev.target.value;
+    if (val && val.trim() != '') {
+      this.currentItems = this.currentItems.filter((item) => {
+        return (item.roomNumber.indexOf(val) > -1);
+        })
+    } else {
+      this.currentItems = this.aux_currentItems;
+    }
   }
 
-  /**
-   * Navigate to the detail page for this item.
-   */
-  openItem(item: Item) {
-    this.navCtrl.push('ItemDetailPage', {
-      item: item
-    });
-  }
-
-  // showAlert(item: Item) {
-  //   let alert = this.alertCtrl.create({
-  //     title: 'New Friend!',
-  //     subTitle: 'Your friend, Obi wan Kenobi, just accepted your friend request!' ,
-  //     buttons: ['OK']
-  //   });
-  //   alert.present();
-  // }
   highlightBlock(item, currentItems) {
     for (var i = 0; i < this.currentItems.length; i++) {
       if(currentItems[i].isClicked) {

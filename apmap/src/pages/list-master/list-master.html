@@ -56,7 +56,7 @@
     <!--</ion-item-sliding>-->
   <!--</ion-list>-->
 
-
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
   <span *ngFor="let item of currentItems">
       <span ion-item (click)="highlightBlock(item, currentItems)">
         <details>
@@ -74,8 +74,6 @@
            <div class="listItemB" *ngIf="item.whiteboard; else other_content">Whiteboard: yes</div>
            <ng-template #other_content><div class="listItemB">Whiteboard: no</div>
            </ng-template>
-
-
         </details>
       </span>
     </span>

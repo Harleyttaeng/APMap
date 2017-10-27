@@ -82,11 +82,4 @@ export class ListMasterPage {
     
   }
 
-  // if (temp === item.roomNumber) {
-  //   document.getElementById(temp).style.fill= "none";
-  //   document.getElementById(item.roomNumber).style.fill = "red";
-  // }
-  // else {
-  //   document.getElementById(item.roomNumber).style.fill= "red";
-  //   temp = item.roomNumber;
 }

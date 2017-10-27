@@ -45,16 +45,6 @@
       <rect id="10.08"x="333.5" y="87.75" opacity="0.5" width="79" height="65.75" />
     </svg>
   </div>
-  <!--<ion-list>-->
-    <!--<ion-item-sliding *ngFor="let item of currentItems">-->
-      <!--<button ion-item (click)="highlightBlock(item, currentItems)">-->
-        <!--<ion-avatar item-start>-->
-        <!--</ion-avatar>-->
-        <!--<h2>{{item.roomNumber + " " + item.roomName}}</h2>-->
-        <!--<ion-note item-end *ngIf="item.note">{{item.note}}</ion-note>-->
-      <!--</button>-->
-    <!--</ion-item-sliding>-->
-  <!--</ion-list>-->
 
   <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
   <span *ngFor="let item of aux_currentItems">

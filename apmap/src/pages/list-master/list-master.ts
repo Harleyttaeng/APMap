@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { IonicPage, ModalController, NavController } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
 import { Item } from '../../models/item';
@@ -46,28 +46,31 @@ export class ListMasterPage {
     if (val && val.trim() != '') {
       this.aux_currentItems = this.currentItems.filter((item) => {
         return ((item.roomNumber + " " + item.roomName).indexOf(val) > -1);
-        })
+      })
     } else {
       this.aux_currentItems = this.currentItems;
     }
   }
 
   highlightBlock(item, currentItems) {
-    for (var i = 0; i < this.currentItems.length; i++) {
-      if(currentItems[i].isClicked) {
-        document.getElementById(currentItems[i].roomNumber).style.fill = "";
-        item.isClicked = false;
-      }
-    };
-      document.getElementById(item.roomNumber).style.fill= "red";
+    if (!(item.isClicked)) {
+      document.getElementById(item.roomNumber).style.fill = "red";
       item.isClicked = true;
+    } else {
+      for (var i = 0; i < this.currentItems.length; i++) {
+        if (currentItems[i].isClicked) {
+          document.getElementById(currentItems[i].roomNumber).style.fill = "";
+          currentItems[i].isClicked = false;
+        }
+      }
     }
+  }
 
-    // if (temp === item.roomNumber) {
-    //   document.getElementById(temp).style.fill= "none";
-    //   document.getElementById(item.roomNumber).style.fill = "red";
-    // }
-    // else {
-    //   document.getElementById(item.roomNumber).style.fill= "red";
-    //   temp = item.roomNumber;
+  // if (temp === item.roomNumber) {
+  //   document.getElementById(temp).style.fill= "none";
+  //   document.getElementById(item.roomNumber).style.fill = "red";
+  // }
+  // else {
+  //   document.getElementById(item.roomNumber).style.fill= "red";
+  //   temp = item.roomNumber;
 }

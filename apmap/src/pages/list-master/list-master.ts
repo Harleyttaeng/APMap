@@ -12,6 +12,7 @@ import { Items } from '../../providers/providers';
 export class ListMasterPage {
   currentItems: Item[];
   aux_currentItems: Item[];
+  currentItem: Item;
 
   constructor(public navCtrl: NavController, public items: Items, public modalCtrl: ModalController, public alertCtrl: AlertController) {
     this.currentItems = this.items.query();
@@ -50,20 +51,35 @@ export class ListMasterPage {
     } else {
       this.aux_currentItems = this.currentItems;
     }
+    if (this.currentItem) {
+      this.highlightBlock(this.currentItem, this.currentItems);
+    }
   }
 
   highlightBlock(item, currentItems) {
     if (!(item.isClicked)) {
       document.getElementById(item.roomNumber).style.fill = "red";
       item.isClicked = true;
+      this.currentItem = item;
     } else {
-      for (var i = 0; i < this.currentItems.length; i++) {
-        if (currentItems[i].isClicked) {
-          document.getElementById(currentItems[i].roomNumber).style.fill = "";
-          currentItems[i].isClicked = false;
+      document.getElementById(item.roomNumber).style.fill = "";
+      item.isClicked = false;
+      this.currentItem = null;
+    }
+    for (var i = 0; i < this.aux_currentItems.length; i++) {
+      if (item.roomNumber === currentItems[i].roomNumber) {
+        console.log("Skipping...");
+      } else {
+        document.getElementById(currentItems[i].roomNumber).style.fill = "";
+        try {
+          document.getElementById(currentItems[i].roomNumber + "details").removeAttribute("open");
+        } catch (e) {
+          // lol hacking my way through downtown
         }
+        currentItems[i].isClicked = false;
       }
     }
+    
   }
 
   // if (temp === item.roomNumber) {
